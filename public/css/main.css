@@ -1,0 +1,52 @@
+.navbar li{
+  display: inline-block;
+  padding-right: 40px;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.navbar{
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+  font-size: 11pt;
+  text-align: center;
+}
+
+.navbar ul{
+  list-style: none;
+}
+
+.navbar a{
+  color: black;
+}
+
+.navbar a:hover{
+  color: #038CA0;
+  text-decoration: none;
+
+}
+.slideshow{
+  padding-top: 30px;
+}
+
+.fotos-home{
+  margin-bottom: 29px;
+}
+.fotos-home2{
+  margin-bottom: 36px;
+}
+
+.fa-facebook-square{
+  font-size: 30pt;
+}
+
+.footer{
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+  font-size: 11pt;
+  text-align: center;
+  color: #038CA0;
+}
+.span{
+  text-align: center;
+}
