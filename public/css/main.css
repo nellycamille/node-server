@@ -1,8 +1,7 @@
-.navbar li{
-  display: inline-block;
-  padding-right: 40px;
-  margin-top: 30px;
-  padding-bottom: 10px;
+.sub-nav{
+  font-size: 11pt;
+  text-align: left;
+  padding-top: 5px;
 }
 
 .navbar{
@@ -12,28 +11,18 @@
   text-align: center;
 }
 
-.navbar ul{
-  list-style: none;
-}
-
-.navbar a{
-  color: black;
-}
-
-.navbar a:hover{
-  color: #038CA0;
-  text-decoration: none;
-
-}
 .slideshow{
   padding-top: 30px;
 }
-
 .fotos-home{
   margin-bottom: 29px;
 }
 .fotos-home2{
   margin-bottom: 36px;
+}
+.fotos-historia{
+margin-bottom: 90px;
+margin-top: 20px;
 }
 
 .fa-facebook-square{
@@ -43,10 +32,185 @@
 .footer{
   font-family: 'Poiret One', cursive;
   font-weight: bolder;
-  font-size: 11pt;
+  font-size: 13pt;
   text-align: center;
   color: #038CA0;
 }
 .span{
   text-align: center;
 }
+.contact{
+  font-family: 'Poiret One', cursive;
+  padding-bottom: 50px;
+
+  text-align: center;
+}
+.contact-info{
+  padding-top: 50px;
+}
+.contact-info h1{
+  font-family: 'Montserrat', sans-serif;
+  color: #8E3074;
+  font-size: 18pt;
+  text-align: center;
+}
+.contact-info h2{
+  font-family: 'Montserrat', sans-serif;
+  color: gray;
+  font-size: 14pt;
+  text-align: center;
+}
+.contact-info p{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12pt;
+  color: gray;
+  text-align: center;
+}
+
+.fa-facebook-square:active{
+  color: #3E5B9A;
+  padding-left: 0;
+  text-align: center;
+
+}
+.about-services p{
+  font-family: 'EB Garamond', serif;
+  font-size: 13pt;
+  color: gray;
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.about-services h2{
+  font-family: 'Poiret One', cursive;
+  font-size: 18pt;
+  font-weight: bolder;
+  color: black;
+  padding-left: 5px;
+}
+
+/////////////// Dropdown //////////////////////////
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+#cssmenu {
+  font-size: 13px;
+  font-weight: bolder;
+
+}
+#cssmenu > ul {
+  font-family: 'Poiret One', cursive;
+  list-style-type: none;
+  padding-right: 40px;
+  margin: 30px auto;
+  text-align: center;
+  border-bottom: 5px;
+  font-weight: bolder;
+  font-size: 13pt;
+}
+#cssmenu a{
+  padding-left: 40px;
+}
+#cssmenu > ul li#responsive-tab {
+  display: none;
+
+  /* Hide for large screens */
+
+}
+#cssmenu > ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+#cssmenu > ul li.right {
+  float: right;
+}
+#cssmenu > ul li.has-sub {
+  position: relative;
+}
+#cssmenu > ul li.has-sub:hover ul {
+  display: block;
+}
+#cssmenu > ul li.has-sub ul {
+  display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#cssmenu > ul li.has-sub ul li {
+  display: block;
+}
+#cssmenu > ul li.has-sub > a {
+
+}
+#cssmenu > ul li.has-sub > a.active,
+#cssmenu > ul li.has-sub > a:hover {
+
+}
+#cssmenu > ul li a {
+  display: block;
+
+  text-decoration: none;
+  color: #747474;
+  text-shadow: 0px 1px 0px #fff;
+}
+#cssmenu > ul li a.active,
+#cssmenu > ul li a:hover {
+  color: #038CA0;
+
+
+}
+@media (max-width: 600px) {
+  #cssmenu > ul {
+    width: 100%;
+  }
+  #cssmenu > ul li#responsive-tab {
+    display: block;
+  }
+  #cssmenu > ul li#responsive-tab a {
+
+  }
+  #cssmenu > ul li#responsive-tab a:hover {
+
+
+  }
+  #cssmenu > ul li {
+    display: none;
+  }
+  #cssmenu > ul li.right {
+    float: none;
+  }
+  #cssmenu > ul li.has-sub {
+    position: relative;
+  }
+  #cssmenu > ul li.has-sub ul {
+    display: block;
+    position: static;
+    width: 100%;
+    border: 0 none;
+  }
+  #cssmenu > ul li.has-sub ul li {
+    display: block !important;
+  }
+  #cssmenu > ul li.has-sub ul li a span {
+    display: block;
+
+  }
+  #cssmenu > ul li.has-sub > a {
+    background-image: none;
+  }
+}
+/* Make sure they show even if hidden in mobile view by JS */
+@media (min-width: 600px) {
+  #cssmenu > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #cssmenu > ul ul li.collapsed {
+    display: block !important;
+  }
+}
+
+/////////// END Dropdow ///////////////////////
