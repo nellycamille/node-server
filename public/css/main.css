@@ -4,15 +4,33 @@
   padding-top: 5px;
 }
 
-.navbar{
+.nav{
   font-family: 'Poiret One', cursive;
   font-weight: bolder;
   font-size: 11pt;
   text-align: center;
 }
 
+#mobile{
+  display: none;
+}
+
 .slideshow{
   padding-top: 30px;
+}
+
+.butts > span{
+  display: none;
+  text-align: center;
+  color: red;
+  width: 90%;
+  background-color: blue;
+  position: absolute;
+  height: 23.5vh;
+  opacity: 0.5;
+}
+.butts:hover > span{
+  display: block;
 }
 .fotos-home{
   margin-bottom: 29px;
@@ -66,12 +84,15 @@ margin-top: 20px;
   color: gray;
   text-align: center;
 }
-
+.face{
+  text-align: center;
+  padding-left: 0 !important;
+}
+}
 .fa-facebook-square:active{
   color: #3E5B9A;
   padding-left: 0;
   text-align: center;
-
 }
 .about-services p{
   font-family: 'EB Garamond', serif;
@@ -93,9 +114,10 @@ margin-top: 20px;
 /////////////// Dropdown //////////////////////////
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
-#cssmenu {
+.cssmenu {
   font-size: 13px;
   font-weight: bolder;
+  position: fixed !important;
 
 }
 #cssmenu > ul {
@@ -122,6 +144,12 @@ margin-top: 20px;
   *display: inline;
   zoom: 1;
 }
+
+#cssmenu > ul li a {
+  font-family: 'Poiret One', cursive;
+  font-size: 17px;
+}
+
 #cssmenu > ul li.right {
   float: right;
 }
@@ -142,7 +170,8 @@ margin-top: 20px;
   display: block;
 }
 #cssmenu > ul li.has-sub > a {
-
+  font-family: 'Poiret One', cursive;
+  font-size: 17px;
 }
 #cssmenu > ul li.has-sub > a.active,
 #cssmenu > ul li.has-sub > a:hover {
@@ -161,7 +190,36 @@ margin-top: 20px;
 
 
 }
+
+@media (max-width: 1024px){
+  #mobile{
+    display: block !important;
+  }
+
+  #desktop{
+    display: none !important;
+  }
+
+  #cssmenu > ul li{
+    display: block !important;
+    list-style: none !important;
+    margin-top: 1%;
+  }
+}
+
 @media (max-width: 600px) {
+  #mobile{
+    display: block !important;
+  }
+
+  #desktop{
+    display: none !important;
+  }
+  #cssmenu > ul li{
+    display: block !important;
+    list-style: none !important;
+    margin-top: 1%;
+  }
   #cssmenu > ul {
     width: 100%;
   }
@@ -175,9 +233,9 @@ margin-top: 20px;
 
 
   }
-  #cssmenu > ul li {
+  /*#cssmenu > ul li {
     display: none;
-  }
+  }*/
   #cssmenu > ul li.right {
     float: none;
   }
@@ -189,6 +247,7 @@ margin-top: 20px;
     position: static;
     width: 100%;
     border: 0 none;
+    text-align: center;
   }
   #cssmenu > ul li.has-sub ul li {
     display: block !important;
@@ -203,13 +262,19 @@ margin-top: 20px;
 }
 /* Make sure they show even if hidden in mobile view by JS */
 @media (min-width: 600px) {
-  #cssmenu > ul > li.collapsed {
+  /*#cssmenu > ul > li.collapsed {
     display: inline-block !important;
     *display: inline;
     zoom: 1;
-  }
+  }*/
   #cssmenu > ul ul li.collapsed {
     display: block !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .butts > span{
+    height: 20.25vh;
   }
 }
 
