@@ -14,7 +14,16 @@
 #mobile{
   display: none;
 }
-
+.firma{
+  font-family: 'Indie Flower', cursive;
+  font-size: 14pt;
+  text-align: center;
+  margin-top: 0 !important;
+}
+.credito{
+  font-family: 'Poiret One', cursive;
+  font-size: 11pt;
+}
 .slideshow{
   padding-top: 30px;
 }
@@ -42,11 +51,17 @@
 margin-bottom: 90px;
 margin-top: 20px;
 }
+.fotos-historia{
 
+margin-top: 20px;
+}
 .fa-facebook-square{
   font-size: 30pt;
 }
-
+.foto-tag{
+  font-family: 'Poiret One', cursive;
+  font-size: 13pt;
+}
 .footer{
   font-family: 'Poiret One', cursive;
   font-weight: bolder;
