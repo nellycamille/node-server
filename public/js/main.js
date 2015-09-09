@@ -71,3 +71,10 @@ menu.on('click', '#responsive-tab', function(){
 } )( jQuery );
 
 ///////////// End dropdown   ////////////////////////////////
+
+$('#emailLink').click(function() {
+   var subject = $("#subject").val();
+   var emailBody = $("#body").val();
+   window.location = 'mailto:schizzo.design.architecture@gmail.com' +
+     '?subject=' + subject + '&body=' + emailBody;
+ });
