@@ -213,7 +213,7 @@ margin-top: 20px;
 
 @media (max-width: 1024px){
   #mobile{
-    display: block !important;
+    display: block;
   }
 
   #desktop{
