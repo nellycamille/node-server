@@ -225,11 +225,29 @@ margin-top: 20px;
     list-style: none !important;
     margin-top: 1%;
   }
+  .about-services p{
+    font-family: 'EB Garamond', serif;
+    font-size: 18pt;
+    color: gray;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 600px) {
   #mobile{
     display: block !important;
+  }
+  .about-services p{
+    font-family: 'EB Garamond', serif;
+    font-size: 18pt;
+    color: gray;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 30px;
   }
 
   #desktop{
