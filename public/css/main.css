@@ -232,6 +232,9 @@ margin-top: 20px;
   #mobile{
     display: block !important;
   }
+  .about-services p{
+    font-size: 14pt !important;
+  }
 
   #desktop{
     display: none !important;
